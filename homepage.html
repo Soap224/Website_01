@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <script src="https://kit.fontawesome.com/cea127e593.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="header__menu">
+            <div class="bar">
+                <div class="bar__logo">
+    
+                    <a href="#">CROSSING PLANES</a>
+                    <img src="./images/logoPath.png" alt="logo">
+    
+                </div>
+                <div class="bar__menu">
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+            </div>
+            <div class="menu">
+                <div class="menu__content">
+                    <ul>
+                        <li><a href="#">Homepage </a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">The Team</a></li>
+                        <li><a href="#">What We Do</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        
+                    </ul>
+                </div>
+    
+                <i class="fa-solid fa-xmark fa-2xl"></i>
+            </div>
+        </div>
+        <div class="header__content">
+            <div class="header__content--left">
+             <p>The intersection of technology, finance, and media.</p>
+             <p style="font-size:40px ;">Discovering new opportunities <br> and building modern <br> solutions.</p>
+            </div>
+            <div class="header__content--right">
+            </br>
+            </br>
+             <p style="text-transform: uppercase;">Digital Technology </br>
+             Innovation </br>
+             New Creation
+             </p>
+             <hr>
+             <p style="text-transform: none;">More information to be revealed soon.</p>
+             </div>
+         </div>
+    </div>
+    </div>
+    <div>
+        <div class="main">
+            <!-- text with arrow -->
+            <div class="main__left">
+                <h2>Meet our team</h2>
+                <img src="./images/arrow.png" alt="">
+            </div>
+
+
+
+            <div class="main__slider">
+
+                <div class="owl-carousel">
+                    <div class="team__list">
+                        <img src="./images/1.png" alt="1">
+                        <p class="name">JOSHUA SMITH </p>
+                        <p>Founding Partner </p> <hr>
+                    </div>
+                    <div class="team__list">
+                        <img src="./images/2.png" alt="2">
+                        <p class="name">ARI LEE </p>
+                        <p>Managing Partner</p> <hr>
+                    </div>
+                    <div class="team__list">
+                        <img src="./images/3.png" alt="3">
+                        <p class="name">NICK WALTON </p>
+                        <p>Director of Communications</p> <hr>
+                    </div>
+                </div>
+            </div>
+
+        <!-- giữ nguyên của bài trước -->
+        </div>
+        <div class="bottom__img">
+            <img src="./images/bottom_head_img.jpg" alt="where is da picture">
+        </div>
+    
+        <div class="last">
+          <footer>
+            <div class="row">
+                <div class="col">
+                    <p><a href="#">Home</a></p>
+                    <p><a href="#">About Us</a></p>
+                    <p><a href="#">The Team</a></p>
+                </div>
+                <div class="p2">
+                    <p><a href="#">What We Do</a></p>
+                    <p><a href="#">Contact</a></p>
+                </div>
+            </div>
+                <div class="year">
+                    <h3 style="color: black;">2022 Crossing Planes</h3>
+                <div class="imgcl">
+                    <a href="#"><img src="./images/e1.jpg" alt="icon"></a>    
+                </div>
+                <div class="imgclend">
+                    <a href="#"><img src="./images/e2.jpg" alt="icon"></a>
+                    <a href="#"><img src="./images/e3.jpg" alt="icon"></a>
+                    <a href="#"><img src="./images/e4.jpg" alt="icon"></a>
+                </div>
+                </div>
+        </footer>
+        </div>
+
+</body>
+
+<script>
+    document.querySelector(".fa-bars").addEventListener("click" ,function(){
+                document.querySelector(".menu").style.display = "flex";}); 
+                document.querySelector(".fa-2xl").addEventListener("click" ,function(){
+                document.querySelector(".menu").style.display = "none";});
+                
+                $('.owl-carousel').owlCarousel({
+                center: true,
+                items:3,
+                loop:true,
+                margin:150,
+                responsive:{
+                    600:{
+                        items:4
+        }
+    }
+});
+                
+            </script>
+
+</html>
